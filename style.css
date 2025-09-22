@@ -252,8 +252,8 @@ body {
 
 .site-footer {
     width: 100%;
-    margin-top: 80px; /* Tambah jarak dari atas */
-    padding-top: 40px; /* Beri jarak di dalam footer */
+    margin-top: 80px; 
+    padding-top: 40px; 
     text-align:center;
 }
 .footer-content {
@@ -300,7 +300,7 @@ body {
     border: none;
     height: 1px;
     background-color: #D9D3C2; 
-    width: 20%; /* Buat lebih pendek agar fokus di tengah */
+    width: 20%; 
     min-width: 150px;
     margin: 30px auto;
 }
