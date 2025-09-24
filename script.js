@@ -16,15 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-const projectCard = document.querySelector('.project-card-container');
+
 const observerOptions = {
     threshold: 0.1 
 };
 
 const targets = document.querySelectorAll('.animate-on-scroll');
 
-// 2. Siapkan observer
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {        
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
@@ -33,10 +32,9 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.1 // Pemicu saat 10% elemen terlihat
+    threshold: 0.1 
 });
 
-// 3. Amati setiap elemen yang sudah dipilih
 targets.forEach(target => {
     observer.observe(target);
 });

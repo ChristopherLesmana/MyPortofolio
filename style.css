@@ -105,8 +105,7 @@ body {
     font-family: "Lexend", sans-serif;
     font-size: 0.85rem;
     color: #555;
-    font-weight: 1000;
-    
+    font-weight: 900;
 }
 
 .tombol-aksi {
@@ -116,20 +115,53 @@ body {
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #8B4513;
-    color: #FFFFFF; 
-    text-decoration: none; 
-    border-radius: 5px;
-    font-weight: bold;
-    border: 2px solid #8B4513;
-    transition: background-color 0.3s ease;
+display: inline-block;
+padding: 12px 25px;
+background-color: #8B4513;
+color: #FFFFFF;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+border: 2px solid #8B4513;
+transition: background-color 0.3s ease;
 }
 
+
+
 .btn:hover {
-    background-color: #fff;
-    color: #8B4513;
+background-color: #fff;
+color: #8B4513;
+}
+
+.btn-sekunder {
+    background-color: transparent;
+    color: #8B4513; 
+    border: 2px solid #8B4513;
+}
+
+.btn-sekunder:hover {
+    background-color: #8B4513;
+    color: #FFFFFF;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(45deg, #A0522D 0%, #CC5500 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+    transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(45deg, #CC5500 0%, #A0522D 100%);
 }
 
 .project-section {
@@ -252,7 +284,7 @@ body {
 
 .site-footer {
     width: 100%;
-    margin-top: 80px; 
+    margin-top: 0px; 
     padding-top: 40px; 
     text-align:center;
 }
@@ -338,7 +370,7 @@ body {
 }
 
 .experience-section {
-    max-width: 900px; /* Lebar kontainer */
+    max-width: 900px; 
     margin: 60px auto;
     padding: 20px;
 }
@@ -348,13 +380,23 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    margin-bottom: 30px; /* Jarak antar item pengalaman */
+    margin-bottom: 30px; 
 }
 
 .experience-header {
-    border-bottom: 1px solid #e9ecef; /* Garis pemisah */
+    border-bottom: 1px solid #e9ecef;
     padding-bottom: 15px;
     margin-bottom: 20px;
+    position: relative; 
+}
+
+.organization-logo {
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+    width:8px; 
+    height: auto;
+    object-fit: contain;
 }
 
 .experience-title {
@@ -376,24 +418,82 @@ body {
     margin-top: 5px;
 }
 
-.experience-description {
-    list-style: none; /* Menghilangkan bullet default */
-    padding-left: 20px;
-    color: #555;
-    line-height: 1.8;
+.experience-description li {
+    position: relative;
+    padding-bottom: 10px;
+    font-family: 'Lexend', sans-serif;
+    white-space: normal; 
+    word-break: break-word; 
 }
 
 .experience-description li {
     position: relative;
-    padding-bottom: 10px; /* Jarak antar poin */
+    padding-bottom: 10px; 
 }
 
-/* Membuat bullet custom yang lebih keren */
+
 .experience-description li::before {
-    content: '›'; /* Simbol panah */
+    content: '›'; 
     position: absolute;
     left: -20px;
     font-weight: bold;
-    color: #A0522D; /* Warna aksen cokelat Anda */
+    color: #A0522D; 
     font-size: 1.2rem;
+}
+
+.experience-gallery {
+    margin-top: 20px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px; 
+}
+
+.gallery-photo {
+    width: 100%;
+    height: 120px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-out;
+}       
+
+.gallery-photo:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 40px 15px; 
+    }
+
+    .project-item,
+    .project-item:nth-child(even) {
+        flex-direction: column; 
+        gap: 25px;
+    }
+
+    .project-image-container,
+    .project-info {
+        flex-basis: 100%; 
+        max-width: 100%;
+    }
+
+    .experience-header {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 15px;
+    }
+
+    .nama {
+        font-size: 2rem;
+    }
+
+    .section-title,
+    .footer-title {
+        font-size: 1.8rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
 }
