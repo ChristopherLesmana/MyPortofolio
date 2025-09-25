@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     const scrollLinks = document.querySelectorAll('a[href^="#"]');
     
     for (const link of scrollLinks) {
@@ -17,13 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-const observerOptions = {
-    threshold: 0.1 
-};
+const targetsToAnimate = document.querySelectorAll('.animate-on-scroll');
 
-const targets = document.querySelectorAll('.animate-on-scroll');
-
-const observer = new IntersectionObserver((entries) => {        
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
@@ -35,13 +30,10 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.1 
 });
 
-targets.forEach(target => {
+targetsToAnimate.forEach(target => {
     observer.observe(target);
 });
 
-if (projectCard) {
-    observer.observe(projectCard);
-}
 
 const emailLink = document.querySelector('.email-link');
 const emailTextSpan = document.querySelector('.email-text');
