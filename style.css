@@ -501,6 +501,18 @@ main {
     body {
         padding: 40px 15px;
     }
+    .main-content-wrapper {
+        gap: 20px; 
+    }
+
+    .theme-switch-container {
+        position: static; 
+        top: unset; 
+        right: unset; 
+        margin: 0 auto; 
+        width: fit-content; 
+        z-index: auto; 
+    }
 
     .perkenalan { 
         max-width: 100%;
