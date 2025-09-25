@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Portfolio Christopher Imanuel Lesmana</title>
-    
+
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Personal portfolio of Christopher Imanuel Lesmana, a web developer specializing in creating end-to-end web solutions.">
+    <meta property="og:title" content="Christopher Imanuel Lesmana | Web Developer Portfolio">
+    <meta property="og:description" content="Explore my projects and organizational experience.">
+    <meta property="og:image" content="https://Vercel-Link-Anda.app/images/Social-Preview.jpg">
+    <meta property="og:url" content="https://Vercel-Link-Anda.app">
+
+    <title>Portfolio Christopher Imanuel Lesmana</title>
 </head>
 <body>
-    <div class="portfolio-container">
+    <div class="theme-switch-container">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+    <div class="main-content-wrapper">
         <header class="perkenalan">
-            
-            <img src="FotoProfile.jpg" alt="Foto Profil" class="foto-profil">
-            
+            <img src="images/FotoProfile.jpg" alt="Foto Profil" class="foto-profil">
+
             <h1 class="nama">Christopher Imanuel Lesmana</h1>
-            
+
             <h2 class="jabatan">Aspiring Web Developer</h2>
-            
+
             <p class="deskripsi">
-                "A Computer Science student from Bina Nusantara University with a passion for the full web development lifecycle. I enjoy building end-to-end solutions, from crafting responsive user interfaces with React.js to implementing server-side logic and APIs with technologies like Node.js. 
+                "A Computer Science student from Bina Nusantara University with a passion for the full web development lifecycle. I enjoy building end-to-end solutions, from crafting responsive user interfaces with React.js to implementing server-side logic and APIs with technologies like Node.js.
                 My goal is to create integrated and efficient web applications that solve real-world problems."
             </p>
             <div class="skill-list">
@@ -48,100 +61,92 @@
                 </div>
             </div>
             <div class="tombol-aksi">
-                <div class="tombol-aksi">
-                    <a href="assets/CV-Christopher-Imanuel-Lesmana.pdf" class="btn-cv" download>Download CV</a>
-                </div>
+                <a href="assets/CV-Christopher-Imanuel-Lesmana.pdf" class="btn-cv" download>Download CV</a>
             </div>
         </header>
-    </div>
 
-    <main>
-        <section id="proyek" class="project-section">
-            
-            <div class="project-card-container animate-on-scroll">
-                
+        <main>
+            <section id="proyek" class="project-section">
                 <h2 class="section-title">My Project</h2>
-                
-                <div class="project-item">
-                    <div class="project-image-container">
-                        <a href="https://i-tung-expense-tracker.vercel.app/" target="_blank"> 
-                            <img src="ProjectImg.jpg" alt="Proyek I-Tung Expense Tracker">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">I-Tung Expense Tracker</h3>
-                        <p class="project-description">
-                            A client-side expense tracker designed for straightforward financial management. This application allows users to add transactions, which are automatically categorized as income or expenses, and features a dashboard that displays the current balance.
-                        </p>
-                        <ul class="project-tech-list">
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>TailwindCSS</li>
-                            <li>ClerkAuth</li>
-                        </ul>
-                        <div class="project-links">
-                             <a href="https://i-tung-expense-tracker.vercel.app/" target="_blank" class="btn">View Project</a>
+
+                <div class="project-card-container animate-on-scroll">
+                    <div class="project-item">
+                        <div class="project-image-container">
+                            <a href="https://i-tung-expense-tracker.vercel.app/" target="_blank">
+                                <img src="images/ProjectImg.jpg" alt="Proyek I-Tung Expense Tracker">
+                            </a>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">I-Tung Expense Tracker</h3>
+                            <p class="project-description">
+                                A client-side expense tracker designed for straightforward financial management. This application allows users to add transactions, which are automatically categorized as income or expenses, and features a dashboard that displays the current balance.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>TailwindCSS</li>
+                                <li>ClerkAuth</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://i-tung-expense-tracker.vercel.app/" target="_blank" class="btn">View Project</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+        </main>
 
-            </div> 
-        </section>
-    </main>
+        <section id="organisasi" class="experience-section">
+            <h2 class="section-title">Organizational Experience</h2>
 
-    <section id="organisasi" class="experience-section">
-        <h2 class="section-title">Organizational Experience</h2>
-
-        <div class="experience-item animate-on-scroll">
-            <div class="experience-header">
-                <h3 class="experience-title">Academic Event Division</h3>
-                <p class="experience-subtitle">Himpunan Mahasiswa Teknik Informatika (HIMTI)</p>
-                <p class="experience-date">September 2024 - Present</p>
-                <img src="LogoHimti.jpeg" alt="HIMTI Logo" class="organization-logo">
-            </div>
-            <ul class="experience-description">
-                <li>Merencanakan dan mengeksekusi alur acara untuk Techno 2024.</li>
-                <li>Mengelola logistik dan mengkoordinasikan berbagai seminar akademik.</li>
-                <li>Menjadi mentor bagi calon aktivis selama proses seleksi.</li>
-                <li>Bertindak sebagai panitia Divisi Acara untuk ICPC (International Collegiate Programming Contest) Jakarta 2024 yang diselenggarakan oleh Binus University.</li>
-            </ul>
-
-            <div class="experience-gallery">
-                <img src="HIMTI1.jpg" alt="Foto Kegiatan Techno 2024" class="gallery-photo">
-                <img src="HIMTI2.jpg" alt="Foto Seminar HIMTI" class="gallery-photo">
-                <img src="HIMTI3.jpg" alt="Foto Mentoring Aktivis" class="gallery-photo">
+            <div class="experience-item animate-on-scroll">
+                <div class="experience-header">
+                    <h3 class="experience-title">Academic Event Division</h3>
+                    <p class="experience-subtitle">Himpunan Mahasiswa Teknik Informatika (HIMTI)</p>
+                    <p class="experience-date">September 2024 - Present</p>
+                    <img src="images/LogoHitmi.png" alt="HIMTI Logo" class="organization-logo">
                 </div>
-        </div>
+                <ul class="experience-description">
+                    <li>Merencanakan dan mengeksekusi alur acara untuk Techno 2024.</li>
+                    <li>Mengelola logistik dan mengkoordinasikan berbagai seminar akademik.</li>
+                    <li>Menjadi mentor bagi calon aktivis selama proses seleksi.</li>
+                    <li>Bertindak sebagai panitia Divisi Acara untuk ICPC (International Collegiate Programming Contest) Jakarta 2024 yang diselenggarakan oleh Binus University.</li>
+                </ul>
 
+                <div class="experience-gallery">
+                    <img src="images/HIMTI1.jpg" alt="Foto Kegiatan Techno 2024" class="gallery-photo">
+                    <img src="images/HIMTI2.jpg" alt="Foto Seminar HIMTI" class="gallery-photo">
+                    <img src="images/HIMTI3.jpg" alt="Foto Mentoring Aktivis" class="gallery-photo">
+                </div>
+            </div>
         </section>
 
-    <footer class="site-footer">
-        <div class="footer-content">
-            <h2 class="footer-title">Get in Touch</h2>
-            <p class="footer-message">
-                I'm currently looking for internship opportunities. My inbox is always open, feel free to reach out!
-            </p>
-            <div class="footer-links">
-                <a href="mailto:christopherimanuellesmana@gmail.com" class="contact-link email-link" title="Click to copy email">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/email.png" alt="Email Icon"/>
-                    <span class="email-text">christopherimanuellesmana@gmail.com</span>
-                </a>
-                <a href="https://www.linkedin.com/in/christopherlesmana/" target="_blank" class="contact-link" title="LinkedIn">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="LinkedIn Icon"/>
-                </a>
-                <a href="https://www.instagram.com/lesmana_christ/" target="_blank" class="contact-link" title="Instagram">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png" alt="Instagram Icon"/>
-                </a>
-                <a href="https://github.com/ChristopherLesmana" target="_blank" class="contact-link" title="GitHub">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub Icon"/>
-                </a>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <h2 class="footer-title">Get in Touch</h2>
+                <p class="footer-message">
+                    I'm currently looking for internship opportunities. My inbox is always open, feel free to reach out!
+                </p>
+                <div class="footer-links">
+                    <a href="mailto:christopherimanuellesmana@gmail.com" class="contact-link email-link" title="Click to copy email">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/email.png" alt="Email Icon"/>
+                        <span class="email-text">christopherimanuellesmana@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/christopherlesmana/" target="_blank" class="contact-link" title="LinkedIn">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="LinkedIn Icon"/>
+                    </a>
+                    <a href="https://www.instagram.com/lesmana_christ/" target="_blank" class="contact-link" title="Instagram">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png" alt="Instagram Icon"/>
+                    </a>
+                    <a href="https://github.com/ChristopherLesmana" target="_blank" class="contact-link" title="GitHub">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub Icon"/>
+                    </a>
+                </div>
+                <hr class="footer-divider">
+                <p class="copyright">&copy; 2025 Christopher Imanuel Lesmana. All Rights Reserved.</p>
             </div>
-            <hr class="footer-divider">
-            <p class="copyright">&copy; 2025 Christopher Imanuel Lesmana. All Rights Reserved.</p>
-        </div>
-    </footer>   
-
-
+        </footer>
+    </div> 
     <script src="script.js"></script>
 </body>
 </html>
