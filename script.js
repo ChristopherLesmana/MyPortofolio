@@ -85,23 +85,20 @@ themeToggle.addEventListener('change', () => {
     }
 });
 
-// === INI BLOK YANG DIMODIFIKASI DI script.js ===
+
 const darkModeStyles = `
 body.dark-mode {
-    /* Menimpa variabel CSS global agar sesuai dengan dark mode */
     --background-color: var(--dark-background-color);
     --card-color: var(--dark-card-color);
     --text-color-primary: var(--dark-text-color-primary);
     --text-color-secondary: var(--dark-text-color-secondary);
-    --accent-color: var(--dark-accent-color); /* Sekarang akan menjadi #616161 dari :root */
+    --accent-color: var(--dark-accent-color); 
     --border-color: var(--dark-border-color);
     --shadow-color: var(--dark-shadow-color);
 
-    /* Hapus background-image pattern di dark mode */
     background-image: none;
 }
 
-/* Perkenalan Card */
 body.dark-mode .perkenalan {
     background-color: var(--dark-card-color);
     border-color: var(--dark-border-color);
@@ -109,7 +106,7 @@ body.dark-mode .perkenalan {
 }
 
 body.dark-mode .foto-profil {
-    border-color: #333; /* Border profil bisa abu-abu gelap di dark mode */
+    border-color: #333; 
 }
 
 
@@ -118,7 +115,7 @@ body.dark-mode .nama {
 }
 
 body.dark-mode .jabatan {
-    color: var(--dark-accent-color); /* Akan menggunakan abu-abu gelap dari --dark-accent-color */
+    color: var(--dark-accent-color); 
 }
 
 body.dark-mode .deskripsi {
@@ -127,12 +124,12 @@ body.dark-mode .deskripsi {
 
 /* Skill List */
 body.dark-mode .skill-item {
-    background-color: #2c2c2c; /* Abu-abu lebih gelap untuk item skill */
+    background-color: #2c2c2c; 
     border-color: #444;
 }
 
 body.dark-mode .skill-item:hover {
-    border-color: var(--dark-accent-color); /* Hover border mengikuti accent baru */
+    border-color: var(--dark-accent-color); 
     box-shadow: 0 8px 20px var(--dark-shadow-color);
 }
 
@@ -140,11 +137,10 @@ body.dark-mode .skill-item span {
     color: var(--dark-text-color-secondary);
 }
 
-/* Tombol Aksi Umum (btn) */
 body.dark-mode .btn {
-    background-color: var(--dark-accent-color); /* Akan menggunakan abu-abu gelap dari --dark-accent-color */
+    background-color: var(--dark-accent-color); 
     border-color: var(--dark-accent-color);
-    color: var(--dark-text-color-primary); /* Teks tombol menjadi warna teks utama dark mode */
+    color: var(--dark-text-color-primary); 
 }
 
 body.dark-mode .btn:hover {
@@ -166,8 +162,8 @@ body.dark-mode .btn-sekunder:hover {
 /* Tombol Download CV (btn-cv) - INI YANG PALING PENTING */
 body.dark-mode .btn-cv {
     background-image: linear-gradient(45deg, var(--dark-cv-button-light-gray) 0%, var(--dark-cv-button-dark-gray) 100%);
-    background-color: initial; /* Pastikan tidak ada background-color lain yang menimpa gradien */
-    color: var(--dark-text-color-primary); /* Warna teks untuk tombol CV */
+    background-color: initial; 
+    color: var(--dark-text-color-primary); 
     box-shadow: 0 4px 15px var(--dark-shadow-color);
 }
 
