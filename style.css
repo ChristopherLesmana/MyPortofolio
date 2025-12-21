@@ -1,5 +1,5 @@
 :root {
-    --background-color: #fffdd0;
+    --background-color: #ffffff;
     --card-color: #FFFFFF;
     --text-color-primary: #333;
     --text-color-secondary: #555;
@@ -28,7 +28,6 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color-primary);
-    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     font-family: 'Helvetica Neue', Arial, sans-serif;
     display: flex; 
     flex-direction: column; 
@@ -182,21 +181,29 @@ body {
 
 .btn-cv {
     display: inline-block;
-    padding: 15px 30px;
-    font-weight: bold;
+    padding: 12px 30px; 
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600; 
+    font-size: 1rem;
     text-decoration: none;
-    color: #FFFFFF;
+    
+    color: #1E1E1E; 
+    
+    background-color: #E67E22; 
+    background-image: none; 
+    
     border: none;
-    border-radius: 8px;
-    background-image: linear-gradient(45deg, var(--accent-color) 0%, #CC5500 100%);
-    box-shadow: 0 4px 15px var(--shadow-color);
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
     transition: all 0.3s ease;
 }
 
 .btn-cv:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px var(--shadow-color);
-    background-image: linear-gradient(45deg, #CC5500 0%, var(--accent-color) 100%);
+    transform: translateY(-2px); 
+    background-color: #d35400; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    color: #FFFFFF; 
 }
 
 main {

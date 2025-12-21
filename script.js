@@ -159,7 +159,6 @@ body.dark-mode .btn-sekunder:hover {
     color: var(--dark-text-color-primary);
 }
 
-/* Tombol Download CV (btn-cv) - INI YANG PALING PENTING */
 body.dark-mode .btn-cv {
     background-image: linear-gradient(45deg, var(--dark-cv-button-light-gray) 0%, var(--dark-cv-button-dark-gray) 100%);
     background-color: initial; 
@@ -174,7 +173,6 @@ body.dark-mode .btn-cv:hover {
 }
 
 
-/* Project Section */
 body.dark-mode .section-title,
 body.dark-mode .project-title {
     color: var(--dark-text-color-primary);
