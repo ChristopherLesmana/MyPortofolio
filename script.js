@@ -88,14 +88,15 @@ themeToggle.addEventListener('change', () => {
 
 const darkModeStyles = `
 body.dark-mode {
-    --background-color: var(--dark-background-color);
+    background-color: var(--dark-background-color);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 2px, transparent 2px);
     --card-color: var(--dark-card-color);
     --text-color-primary: var(--dark-text-color-primary);
     --text-color-secondary: var(--dark-text-color-secondary);
     --accent-color: var(--dark-accent-color); 
     --border-color: var(--dark-border-color);
     --shadow-color: var(--dark-shadow-color);
-
+    background-size: 25px 25px;
     background-image: none;
 }
 
@@ -256,7 +257,13 @@ body.dark-mode .contact-link img {
 body.dark-mode .footer-divider {
     background-color: var(--dark-border-color);
 }
-
+body.dark-mode .perkenalan, 
+body.dark-mode .project-card-container, 
+body.dark-mode .experience-item {
+    background-color: rgba(30, 30, 30, 0.6) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
 `;
 
 
